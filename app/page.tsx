@@ -545,7 +545,7 @@ export default function HomePage() {
             <div>
               <p style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--text-muted)", marginBottom: "20px" }}>Contact</p>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginBottom: "20px" }}>
-                <p style={{ fontSize: "13px", color: "var(--text-secondary)" }}>info@kya.ng</p>
+                <p style={{ fontSize: "13px", color: "var(--text-secondary)" }}>info@kya.com.ng</p>
                 <p style={{ fontSize: "13px", color: "var(--text-secondary)" }}>Lagos, Nigeria</p>
               </div>
               <a href="#contact" className="btn-primary" style={{ display: "inline-block", padding: "10px 20px", fontSize: "12px" }}>
