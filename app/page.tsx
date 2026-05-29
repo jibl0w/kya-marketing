@@ -484,7 +484,7 @@ export default function HomePage() {
               </div>
               <div style={{ padding: "24px 28px", background: "var(--navy-2)", border: "1px solid var(--white-border)", borderRadius: "10px" }}>
                 <p style={{ fontSize: "11px", color: "var(--text-muted)", marginBottom: "6px", letterSpacing: "0.08em", textTransform: "uppercase" }}>Direct Email</p>
-                <p style={{ fontSize: "16px", color: "var(--text-primary)", fontWeight: 500 }}>info@kya.ng</p>
+                <p style={{ fontSize: "16px", color: "var(--text-primary)", fontWeight: 500 }}>info@kya.com.ng</p>
                 <p style={{ fontSize: "12px", color: "var(--text-muted)", marginTop: "4px" }}>We respond within 2 business days</p>
               </div>
             </div>
