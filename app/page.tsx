@@ -1,3 +1,4 @@
+import ContactForm from "./components/ContactForm";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -585,31 +586,3 @@ export default function HomePage() {
   );
 }
 
-function ContactForm() {
-  return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
-        <input placeholder="First Name" />
-        <input placeholder="Last Name" />
-      </div>
-      <input type="email" placeholder="Email Address" />
-      <input placeholder="Company / Organisation" />
-      <input placeholder="Phone Number (optional)" />
-      <select defaultValue="">
-        <option value="" disabled>Type of Enquiry</option>
-        <option>Trade Enquiry — I want to import goods</option>
-        <option>Banking Partnership</option>
-        <option>Supplier Onboarding</option>
-        <option>Investor Relations</option>
-        <option>General Enquiry</option>
-      </select>
-      <textarea placeholder="Tell us about your enquiry..." rows={4} style={{ resize: "none" }} />
-      <button className="btn-primary" style={{ width: "100%", padding: "16px", fontSize: "13px", marginTop: "4px" }}>
-        Send Message →
-      </button>
-      <p style={{ fontSize: "11px", color: "var(--text-muted)", textAlign: "center" }}>
-        We respond within 2 business days · info@kya.ng
-      </p>
-    </div>
-  );
-}
