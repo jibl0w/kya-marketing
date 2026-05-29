@@ -1,5 +1,4 @@
 import ContactForm from "./components/ContactForm";
-import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -158,25 +157,6 @@ export default function HomePage() {
           font-family: 'DM Mono', monospace;
         }
 
-        input, select, textarea {
-          background: var(--navy-3) !important;
-          border: 1px solid var(--white-border) !important;
-          border-radius: 8px !important;
-          padding: 12px 16px !important;
-          font-size: 13px !important;
-          color: var(--text-primary) !important;
-          outline: none !important;
-          width: 100% !important;
-          font-family: inherit !important;
-          transition: border-color 0.2s !important;
-        }
-        input:focus, select:focus, textarea:focus {
-          border-color: var(--gold-border) !important;
-        }
-        input::placeholder, textarea::placeholder {
-          color: var(--text-muted) !important;
-        }
-
         @media (max-width: 900px) {
           .hide-mobile { display: none !important; }
           .two-col { grid-template-columns: 1fr !important; }
@@ -186,9 +166,8 @@ export default function HomePage() {
           .stat-grid { grid-template-columns: 1fr 1fr !important; }
           .stat-card { border-right: none; border-bottom: 1px solid var(--white-border); }
           .stat-card:last-child { border-bottom: none; }
-          .hero-text { font-size: 44px !important; }
-          .section-pad { padding: 80px 24px !important; }
           .hero-pad { padding: 80px 24px 60px !important; }
+          .section-pad { padding: 80px 24px !important; }
         }
       `}</style>
 
@@ -232,7 +211,7 @@ export default function HomePage() {
               <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--gold)", display: "inline-block" }} />
               Nigeria — Asia Trade Infrastructure
             </div>
-            <h1 className="display hero-text" style={{
+            <h1 className="display" style={{
               fontSize: "clamp(48px, 6.5vw, 92px)",
               fontWeight: 600,
               lineHeight: 1.03,
@@ -546,8 +525,7 @@ export default function HomePage() {
                   { label: "For Businesses", href: "#who-we-serve" },
                   { label: "For Institutions", href: "#who-we-serve" },
                 ].map(item => (
-                  <a key={item.label} href={item.href} style={{ fontSize: "13px", color: "var(--text-secondary)", textDecoration: "none" }}
-                    className="nav-link">{item.label}</a>
+                  <a key={item.label} href={item.href} className="nav-link" style={{ fontSize: "13px" }}>{item.label}</a>
                 ))}
               </div>
             </div>
@@ -560,18 +538,17 @@ export default function HomePage() {
                   { label: "Compliance", href: "#about" },
                   { label: "Contact", href: "#contact" },
                 ].map(item => (
-                  <a key={item.label} href={item.href} style={{ fontSize: "13px", color: "var(--text-secondary)", textDecoration: "none" }}
-                    className="nav-link">{item.label}</a>
+                  <a key={item.label} href={item.href} className="nav-link" style={{ fontSize: "13px" }}>{item.label}</a>
                 ))}
               </div>
             </div>
             <div>
               <p style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--text-muted)", marginBottom: "20px" }}>Contact</p>
-              <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginBottom: "20px" }}>
                 <p style={{ fontSize: "13px", color: "var(--text-secondary)" }}>info@kya.ng</p>
                 <p style={{ fontSize: "13px", color: "var(--text-secondary)" }}>Lagos, Nigeria</p>
               </div>
-              <a href="#contact" className="btn-primary" style={{ marginTop: "20px", display: "inline-block", padding: "10px 20px", fontSize: "12px" }}>
+              <a href="#contact" className="btn-primary" style={{ display: "inline-block", padding: "10px 20px", fontSize: "12px" }}>
                 Request Demo
               </a>
             </div>
@@ -582,7 +559,7 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
+
     </div>
   );
 }
-
