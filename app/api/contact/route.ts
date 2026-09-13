@@ -69,7 +69,7 @@ export async function POST(req: Request) {
           <p style="font-size: 12px; color: #4A5568; line-height: 1.6;">
             KYA Digital Services Ltd · CAC Registered · Nigeria<br/>
             Not a PSP · Not a Bank · Trade Infrastructure Platform<br/>
-            info@kya.ng · kya.ng
+            info@kya.com.ng · kya.ng
           </p>
         </div>
       `,

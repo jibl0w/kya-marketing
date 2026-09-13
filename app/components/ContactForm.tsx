@@ -35,10 +35,10 @@ export default function ContactForm() {
       if (res.ok) {
         setSubmitted(true);
       } else {
-        setError("Something went wrong. Please email us at info@kya.ng");
+        setError("Something went wrong. Please email us at info@kya.com.ng");
       }
     } catch {
-      setError("Something went wrong. Please email us at info@kya.ng");
+      setError("Something went wrong. Please email us at info@kya.com.ng");
     } finally {
       setSubmitting(false);
     }
@@ -112,7 +112,7 @@ export default function ContactForm() {
       >
         <option value="" disabled>Type of Enquiry *</option>
         <option>Trade Enquiry — I want to import goods</option>
-        <option>Banking Partnership</option>
+        
         <option>Supplier Onboarding</option>
         <option>Investor Relations</option>
         <option>General Enquiry</option>
@@ -148,7 +148,7 @@ export default function ContactForm() {
         {submitting ? "Sending..." : "Send Message →"}
       </button>
       <p style={{ fontSize: "11px", color: "var(--text-muted)", textAlign: "center" }}>
-        We respond within 2 business days · info@kya.ng
+        We respond within 2 business days · info@kya.com.ng
       </p>
     </div>
   );
