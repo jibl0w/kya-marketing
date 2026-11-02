@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "KYA Digital Services — Nigeria-Asia Trade Infrastructure",
   description: "KYA connects Nigerian businesses with verified Asian suppliers through a structured, compliance-first digital trade corridor.",
-  keywords: ["Nigeria trade", "Asia trade", "import infrastructure", "trade finance", "Nigeria Asia corridor"],
+  keywords: ["Nigeria Asia trade", "import sourcing Nigeria", "verified Asian suppliers", "cross-border sourcing", "trade documentation"],
   openGraph: {
     type: "website",
     siteName: "KYA Digital Services",
