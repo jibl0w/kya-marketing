@@ -193,7 +193,7 @@ export default function Home() {
             { value: "5", label: "Trade Categories", sub: "Verified supplier sectors" },
             { value: "24/7", label: "Platform Access", sub: "Source and track anytime" },
             { value: "100%", label: "Traceable", sub: "Full audit trail on every trade" },
-            { value: "CBN", label: "Aligned", sub: "Regulatory compliance built in" },
+            { value: "CAC", label: "Registered", sub: "Registered in Nigeria, RC 9136827" },
           ].map(stat => (
             <div key={stat.label}>
               <p className="display" style={{ fontSize: "44px", fontWeight: 600, color: "var(--gold)", letterSpacing: "-0.02em", lineHeight: 1 }}>{stat.value}</p>
@@ -341,7 +341,7 @@ export default function Home() {
                 {[
                   "Access to verified, audited Asian suppliers",
                   "Structured trade documentation support",
-                  "Regulatory-compliant import process",
+                  "Guidance on import documentation requirements",
                   "Full visibility and tracking at every stage",
                   "You stay in control of your own payments",
                 ].map(item => (
@@ -482,7 +482,7 @@ export default function Home() {
               <p style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--text-muted)", marginBottom: "20px" }}>Contact</p>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                 <p style={{ fontSize: "13px", color: "var(--text-secondary)" }}>info@kya.com.ng</p>
-                <p style={{ fontSize: "13px", color: "var(--text-secondary)" }}>Lagos, Nigeria</p>
+                <p style={{ fontSize: "13px", color: "var(--text-secondary)" }}>Ibadan, Nigeria</p>
               </div>
             </div>
           </div>
