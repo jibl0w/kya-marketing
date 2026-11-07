@@ -264,7 +264,7 @@ export default function Home() {
               { step: "02", title: "Supplier Selection", text: "Customers select from our network of verified Asian suppliers across five strategic trade categories, with full supplier profiles and audit records." },
               { step: "03", title: "Trade Documentation", text: "Required trade documents are managed through the platform, and the customer is supported in meeting the necessary import documentation requirements." },
               { step: "04", title: "Order & Direct Payment", text: "The customer places the order and pays the supplier directly, arranging their own payment. A deposit is paid before manufacturing begins. KYA does not handle or hold any funds." },
-              { step: "05", title: "Manufacture, Inspection & Shipment", text: "Goods are produced and independently inspected before shipment. The supplier ships the goods and provides the post-shipment documents." },
+              { step: "05", title: "Manufacture, Inspection & Shipment", text: "Goods are produced. Once you have paid the balance and freight, the supplier inspects the goods and shares the inspection report and photos with you on the platform. Goods ship once the report is approved, and the supplier provides the post-shipment documents." },
               { step: "06", title: "Documentation & Closure", text: "Post-shipment documents are securely shared with the customer and recorded by KYA. The customer completes import clearance, and the trade closes with a full compliance and audit record." },
             ].map(item => (
               <div key={item.step} className="card">
