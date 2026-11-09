@@ -1,0 +1,20 @@
+﻿app\api\contact\route.ts:100: <p style="font-size: 12px; color: #4A5568; line-height: 1.6;">
+app\api\contact\route.ts:102: Not a PSP · Not a Bank · Trade Infrastructure Platform<br/>
+app\components\ContactForm.tsx:38: setError("Something went wrong. Please email us at info@kya.com.ng");
+app\components\ContactForm.tsx:41: setError("Something went wrong. Please email us at info@kya.com.ng");
+app\components\ContactForm.tsx:151: We respond within 2 business days · info@kya.com.ng
+app\layout.tsx:7: keywords: ["Nigeria trade", "Asia trade", "import infrastructure", "trade finance", "Nigeria Asia corridor"],
+app\page.tsx:31: line-height: 1.6;
+app\page.tsx:182: <p style={{ fontSize: "12px", color: "var(--text-muted)", lineHeight: 1.6 }}>{item.desc}</p>
+app\page.tsx:196: { value: "CBN", label: "Aligned", sub: "Regulatory compliance built in" },
+app\page.tsx:226: {["CAC Registered", "Nigeria-Based", "Not a PSP", "Not a Bank", "Trade Infrastructure"].map(tag => (
+app\page.tsx:344: "Regulatory-compliant import process",
+app\page.tsx:421: <p style={{ fontSize: "16px", color: "var(--text-primary)", fontWeight: 500 }}>info@kya.com.ng</p>
+app\page.tsx:449: {["CAC Registered", "Not a PSP", "Not a Bank"].map(tag => (
+app\page.tsx:484: <p style={{ fontSize: "13px", color: "var(--text-secondary)" }}>info@kya.com.ng</p>
+app\page.tsx:492: <p style={{ fontSize: "11px", color: "var(--text-muted)" }}>Not a Payment Service Provider · Not a Bank · Trade Infrastructure Platform</p>
+package.json:4: "private": true,
+README.md:30: You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+secure-upload.js:34: "payment_platform_fee",
+secure-upload.js:51: "payment_platform_fee",
+secure-upload.js:61: // Customer uploads the supplier should hear about. The platform fee receipt

@@ -1,5 +1,7 @@
 import ContactForm from "./components/ContactForm";
 
+const LOGISTICS_ON = process.env.NEXT_PUBLIC_LOGISTICS_ENABLED === "on";
+
 export default function Home() {
   return (
     <>
@@ -164,7 +166,7 @@ export default function Home() {
             <span style={{ color: "var(--gold)" }}>with Confidence</span>
           </h1>
           <p style={{ fontSize: "19px", lineHeight: 1.75, color: "var(--text-secondary)", maxWidth: "600px", marginBottom: "44px", fontWeight: 300 }}>
-            KYA connects Nigerian businesses with verified Asian suppliers — and keeps every trade structured, documented, and fully traceable from first enquiry to delivered goods.
+            KYA connects Nigerian businesses with verified Asian suppliers — and keeps every trade structured, documented, and fully traceable {LOGISTICS_ON ? "from first enquiry to delivered goods." : "from first enquiry to goods ready for collection."}
           </p>
           <div style={{ display: "flex", gap: "14px", flexWrap: "wrap", marginBottom: "64px" }}>
             <a href="#contact" className="btn-primary">Start Sourcing</a>
@@ -251,7 +253,7 @@ export default function Home() {
           <div style={{ textAlign: "center", marginBottom: "72px" }}>
             <p className="section-label">How It Works</p>
             <h2 className="display" style={{ fontSize: "clamp(34px, 4vw, 54px)", fontWeight: 600, lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: "16px" }}>
-              A Structured Path from Enquiry to Delivery
+              {LOGISTICS_ON ? "A Structured Path from Enquiry to Delivery" : "A Structured Path from Enquiry to Collection"}
             </h2>
             <p style={{ fontSize: "16px", color: "var(--text-secondary)", maxWidth: "560px", margin: "0 auto", fontWeight: 300, lineHeight: 1.75 }}>
               Every KYA transaction follows a documented process. You stay in control of your own payments; we keep the trade verified and traceable.
@@ -264,8 +266,8 @@ export default function Home() {
               { step: "02", title: "Supplier Selection", text: "Customers select from our network of verified Asian suppliers across five strategic trade categories, with full supplier profiles and audit records." },
               { step: "03", title: "Trade Documentation", text: "Required trade documents are managed through the platform, and the customer is supported in meeting the necessary import documentation requirements." },
               { step: "04", title: "Order & Direct Payment", text: "The customer places the order and pays the supplier directly, arranging their own payment. A deposit is paid before manufacturing begins. KYA does not handle or hold any funds." },
-              { step: "05", title: "Manufacture, Inspection & Shipment", text: "Goods are produced. Once you have paid the balance and freight, the supplier inspects the goods and shares the inspection report and photos with you on the platform. Goods ship once the report is approved, and the supplier provides the post-shipment documents." },
-              { step: "06", title: "Documentation & Closure", text: "Post-shipment documents are securely shared with the customer and recorded by KYA. The customer completes import clearance, and the trade closes with a full compliance and audit record." },
+              { step: "05", title: LOGISTICS_ON ? "Manufacture, Inspection & Shipment" : "Manufacture & Inspection", text: LOGISTICS_ON ? "Goods are produced. Once you have paid the balance and freight, the supplier inspects the goods and shares the inspection report and photos with you on the platform. Goods ship once the report is approved, and the supplier provides the post-shipment documents." : "Goods are produced. The supplier then inspects them and shares the inspection report and photos with you on the platform, together with its invoice. Once you approve the report, you pay the balance and the inspection cost directly to the supplier." },
+              { step: "06", title: LOGISTICS_ON ? "Documentation & Closure" : "Collection & Closure", text: LOGISTICS_ON ? "Post-shipment documents are securely shared with the customer and recorded by KYA. The customer completes import clearance, and the trade closes with a full compliance and audit record." : "The supplier gives you the pickup address and the shipping documents. You arrange your own freight forwarder to collect the goods, and you complete import clearance. KYA's part of the trade closes with a full compliance and audit record." },
             ].map(item => (
               <div key={item.step} className="card">
                 <p className="display" style={{ fontSize: "34px", fontWeight: 600, color: "var(--gold)", lineHeight: 1, marginBottom: "14px" }}>{item.step}</p>
